@@ -6,26 +6,25 @@ from dotenv import load_dotenv
 from pyrogram import filters
 
 load_dotenv()
-
-API_ID = int(getenv("25063824"))
-API_HASH = getenv("470f472ea4ecc62efa7c7bea2f19df32")
+API_ID = int(getenv("API_ID","22766050"))
+API_HASH = getenv("092af0023f22b00248071887b1a74efa")
 
 BOT_TOKEN = getenv("6093398509:AAHFx1r9qJrOviEZUKnVcm_2g15IU298cS0")
 
 MONGO_DB_URI = getenv("mongodb+srv://marvel:marvel@marvelcloud0.gse7lpr.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("-1001755297039"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝐋ɪғᴇ 𝐋ɪɴᴇ")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001755297039"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", ""𝐋ɪғᴇ 𝐋ɪɴᴇ 𝐌ᴜsɪᴄ)
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5465568465").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Kassim752/BuddiesMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Kassim-the-devil/Darlzzzmusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/darlzzzbots")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DarlzzzBots")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/TaMilChAtLiFeLiNeGrOuP")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
